@@ -1,280 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encerramento Ano Letivo 2024</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encerramento Ano Letivo 2024</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <h1>🎓 Encerramento 2024</h1>
-                </div>
-                <button class="menu-toggle" aria-label="Menu">☰</button>
-                <nav>
-                    <ul>
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#galeria">Galeria</a></li>
-                        <li><a href="#agenda">Agenda</a></li>
-                        <li><a href="#mensagens">Mensagens</a></li>
-                    </ul>
-                </nav>
-            </div>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>🎓 Encerramento 2024</h1>
         </div>
-    </header>
+        <div class="header-buttons">
+          <button id="theme-toggle" aria-label="Alternar tema">🌓 Tema</button>
+          <button id="show-essays-btn">📚 Ver Redações</button>
+        </div>
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+        <nav>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#mensagens">Mensagens</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-    <section class="hero" id="inicio">
-        <div class="container">
-            <h2>Celebrando um Ano Inesquecível!</h2>
-            <p>Juntos construímos memórias que levaremos para sempre 🌟</p>
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h2>Celebrando um Ano Inesquecível!</h2>
+      <p>Juntos construímos memórias que levaremos para sempre 🌟</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="countdown">
+      <h2 class="section-title">Contagem Regressiva para a Formatura</h2>
+      <p>Faltam apenas:</p>
+      <div class="countdown-timer" id="countdown">
+        <div class="time-unit">
+          <span id="days">00</span>
+          <p>Dias</p>
         </div>
+        <div class="time-unit">
+          <span id="hours">00</span>
+          <p>Horas</p>
+        </div>
+        <div class="time-unit">
+          <span id="minutes">00</span>
+          <p>Minutos</p>
+        </div>
+        <div class="time-unit">
+          <span id="seconds">00</span>
+          <p>Segundos</p>
+        </div>
+      </div>
     </section>
 
-    <main class="container">
-        <section class="countdown">
-            <h2 class="section-title">Contagem Regressiva para a Formatura</h2>
-            <p>Faltam apenas:</p>
-            <div class="countdown-timer" id="countdown">
-                <div class="time-unit">
-                    <span id="days">00</span>
-                    <p>Dias</p>
-                </div>
-                <div class="time-unit">
-                    <span id="hours">00</span>
-                    <p>Horas</p>
-                </div>
-                <div class="time-unit">
-                    <span id="minutes">00</span>
-                    <p>Minutos</p>
-                </div>
-                <div class="time-unit">
-                    <span id="seconds">00</span>
-                    <p>Segundos</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="galeria">
-            <h2 class="section-title">📸 Galeria de Momentos</h2>
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop" alt="Primeiro dia de aula">
-                    <div class="gallery-caption">
-                        <h3>Primeiro Dia de Aula</h3>
-                        <p>O início de uma jornada incrível</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop" alt="Feira de ciências">
-                    <div class="gallery-caption">
-                        <h3>Feira de Ciências</h3>
-                        <p>Descobrindo novos horizontes</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=600&h=400&fit=crop" alt="Dia do esporte">
-                    <div class="gallery-caption">
-                        <h3>Dia do Esporte</h3>
-                        <p>Competição e trabalho em equipe</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop" alt="Festival cultural">
-                    <div class="gallery-caption">
-                        <h3>Festival Cultural</h3>
-                        <p>Celebrando nossa diversidade</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="Trabalho em grupo">
-                    <div class="gallery-caption">
-                        <h3>Projetos em Grupo</h3>
-                        <p>Colaboração e aprendizado</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop" alt="Excursão">
-                    <div class="gallery-caption">
-                        <h3>Excursão Educativa</h3>
-                        <p>Aprendendo além da sala de aula</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="agenda">
-            <h2 class="section-title">📅 Agenda de Encerramento</h2>
-            <div class="timeline">
-                <article class="timeline-item">
-                    <p class="timeline-date">10 de Dezembro</p>
-                    <h3>Entrega de Boletins</h3>
-                    <p>Recebimento das notas finais e feedback do ano letivo. Local: Secretaria da escola, das 8h às 17h.</p>
-                </article>
-                <article class="timeline-item">
-                    <p class="timeline-date">15 de Dezembro</p>
-                    <h3>Festa de Confraternização</h3>
-                    <p>Celebração com toda a comunidade escolar. Haverá apresentações, músicas e muita diversão! Ginásio da escola, 19h.</p>
-                </article>
-                <article class="timeline-item">
-                    <p class="timeline-date">18 de Dezembro</p>
-                    <h3>Cerimônia de Formatura</h3>
-                    <p>Momento solene de entrega dos certificados. Auditório Principal, 20h. Traje: Formal.</p>
-                </article>
-                <article class="timeline-item">
-                    <p class="timeline-date">20 de Dezembro</p>
-                    <h3>Último Dia Letivo</h3>
-                    <p>Despedida oficial e início das férias. Que todos tenham um descanso merecido!</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="mensagens">
-            <h2 class="section-title">💌 Mural de Mensagens</h2>
-            <div class="messages">
-                <form class="message-form" id="messageForm">
-                    <div class="form-group">
-                        <label for="name">Seu Nome:</label>
-                        <input type="text" id="name" name="name" required placeholder="Digite seu nome">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Sua Mensagem:</label>
-                        <textarea id="message" name="message" required placeholder="Compartilhe suas memórias e agradecimentos..."></textarea>
-                    </div>
-                    <button type="submit" class="btn">Enviar Mensagem</button>
-                </form>
-                <div class="message-list" id="messageList"></div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Sobre</h3>
-                    <p>Site comemorativo do encerramento do ano letivo 2024. Celebrando conquistas e construindo memórias!</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contato</h3>
-                    <p>Email: contato@escola.edu.br</p>
-                    <p>Tel: (41) 3333-4444</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Redes Sociais</h3>
-                    <p><a href="#">Facebook</a></p>
-                    <p><a href="#">Instagram</a></p>
-                    <p><a href="#">YouTube</a></p>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2024 Escola. Todos os direitos reservados. Feito com 💜 pelos alunos.</p>
-            </div>
+    <section id="galeria">
+      <h2 class="section-title">📸 Galeria de Momentos</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop" alt="Primeiro dia de aula">
+          <div class="gallery-caption">
+            <h3>Primeiro Dia de Aula</h3>
+            <p>O início de uma jornada incrível</p>
+          </div>
         </div>
-    </footer>
+        <div class="gallery-item">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop" alt="Feira de ciências">
+          <div class="gallery-caption">
+            <h3>Feira de Ciências</h3>
+            <p>Descobrindo novos horizontes</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=600&h=400&fit=crop" alt="Dia do esporte">
+          <div class="gallery-caption">
+            <h3>Dia do Esporte</h3>
+            <p>Competição e trabalho em equipe</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop" alt="Festival cultural">
+          <div class="gallery-caption">
+            <h3>Festival Cultural</h3>
+            <p>Celebrando nossa diversidade</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="Trabalho em grupo">
+          <div class="gallery-caption">
+            <h3>Projetos em Grupo</h3>
+            <p>Colaboração e aprendizado</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop" alt="Excursão">
+          <div class="gallery-caption">
+            <h3>Excursão Educativa</h3>
+            <p>Aprendendo além da sala de aula</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script>
-        // Menu Hamburguer Mobile
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav');
+    <section id="agenda">
+      <h2 class="section-title">📅 Agenda de Encerramento</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <p class="timeline-date">10 de Dezembro</p>
+          <h3>Entrega de Boletins</h3>
+          <p>Recebimento das notas finais e feedback do ano letivo. Local: Secretaria da escola, das 8h às 17h.</p>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">15 de Dezembro</p>
+          <h3>Festa de Confraternização</h3>
+          <p>Celebração com toda a comunidade escolar. Haverá apresentações, músicas e muita diversão! Ginásio da escola, 19h.</p>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">18 de Dezembro</p>
+          <h3>Cerimônia de Formatura</h3>
+          <p>Momento solene de entrega dos certificados. Auditório Principal, 20h. Traje: Formal.</p>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">20 de Dezembro</p>
+          <h3>Último Dia Letivo</h3>
+          <p>Despedida oficial e início das férias. Que todos tenham um descanso merecido!</p>
+        </article>
+      </div>
+    </section>
 
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
+    <section id="mensagens">
+      <h2 class="section-title">💌 Mural de Mensagens</h2>
+      <div class="messages">
+        <form class="message-form" id="messageForm">
+          <div class="form-group">
+            <label for="name">Seu Nome:</label>
+            <input type="text" id="name" name="name" required placeholder="Digite seu nome" />
+          </div>
+          <div class="form-group">
+            <label for="message">Sua Mensagem:</label>
+            <textarea id="message" name="message" required placeholder="Compartilhe suas memórias e agradecimentos..."></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+        <div class="message-list" id="messageList"></div>
+      </div>
+    </section>
 
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('active');
-            });
-        });
+    <!-- Seção de redações -->
+    <section id="essays-section" class="essays" style="display: none;">
+      <h2 class="section-title">📝 Redações do Ano</h2>
+      <div id="essays-list"></div>
+    </section>
+  </main>
 
-        // Contador Regressivo
-        function updateCountdown() {
-            const graduationDate = new Date('2024-12-18T20:00:00').getTime();
-            const now = new Date().getTime();
-            const distance = graduationDate - now;
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Sobre</h3>
+          <p>Site comemorativo do encerramento do ano letivo 2024. Celebrando conquistas e construindo memórias!</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>Email: contato@escola.edu.br</p>
+          <p>Tel: (41) 3333-4444</p>
+        </div>
+        <div class="footer-section">
+          <h3>Redes Sociais</h3>
+          <p><a href="#">Facebook</a></p>
+          <p><a href="#">Instagram</a></p>
+          <p><a href="#">YouTube</a></p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Escola. Todos os direitos reservados. Feito com 💜 pelos alunos.</p>
+      </div>
+    </div>
+  </footer>
 
-            if (distance < 0) {
-                document.getElementById('countdown').innerHTML = '<p style="font-size: 2rem; color: var(--accent);">🎉 A formatura chegou! 🎉</p>';
-                return;
-            }
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById('days').textContent = String(days).padStart(2, '0');
-            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-        }
-
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-
-        // Sistema de Mensagens
-        const messageForm = document.getElementById('messageForm');
-        const messageList = document.getElementById('messageList');
-        const messages = [];
-
-        messageForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const message = document.getElementById('message').value;
-
-            if (name && message) {
-                messages.push({ name, message, date: new Date() });
-                displayMessages();
-                messageForm.reset();
-                
-                // Feedback visual
-                const btn = messageForm.querySelector('.btn');
-                const originalText = btn.textContent;
-                btn.textContent = '✓ Mensagem enviada!';
-                btn.style.background = '#10b981';
-                
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                    btn.style.background = '';
-                }, 2000);
-            }
-        });
-
-        function displayMessages() {
-            messageList.innerHTML = messages.slice().reverse().map(msg => `
-                <div class="message-card">
-                    <p class="message-author">${msg.name}</p>
-                    <p>${msg.message}</p>
-                    <small style="color: var(--gray); margin-top: 0.5rem; display: block;">
-                        ${msg.date.toLocaleDateString('pt-BR')} às ${msg.date.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}
-                    </small>
-                </div>
-            `).join('');
-        }
-
-        // Mensagens iniciais de exemplo
-        messages.push(
-            { name: 'Ana Silva', message: 'Foi um ano incrível! Vou sentir saudades de todos. Obrigada pelos momentos especiais! 💙', date: new Date('2024-11-18T10:30:00') },
-            { name: 'Carlos Santos', message: 'Aprendi muito este ano, não só nas aulas, mas também sobre amizade e trabalho em equipe. Sucesso a todos!', date: new Date('2024-11-18T14:20:00') },
-            { name: 'Maria Oliveira', message: 'Que ano maravilhoso! Os professores foram sensacionais e os colegas, inesquecíveis. Até a próxima jornada! 🎓', date: new Date('2024-11-19T09:15:00') }
-        );
-        displayMessages();
-
-        // Scroll suave para links de navegação
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
+
