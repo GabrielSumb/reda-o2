@@ -1,0 +1,448 @@
+/* ========================================
+   RESET E VARIÁVEIS
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #6366f1;
+    --secondary: #8b5cf6;
+    --accent: #ec4899;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --gray: #64748b;
+}
+
+/* ========================================
+   ESTILOS GERAIS
+   ======================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background: var(--light);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ========================================
+   HEADER E NAVEGAÇÃO
+   ======================================== */
+header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    animation: fadeInUp 1s 0.2s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   MAIN E SECTIONS
+   ======================================== */
+main {
+    padding: 4rem 0;
+}
+
+section {
+    margin-bottom: 5rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--primary);
+}
+
+/* ========================================
+   CONTADOR REGRESSIVO
+   ======================================== */
+.countdown {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.time-unit {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    min-width: 100px;
+}
+
+.time-unit span {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.time-unit p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* ========================================
+   GALERIA
+   ======================================== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+/* ========================================
+   TIMELINE
+   ======================================== */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--primary);
+}
+
+.timeline-item {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.75rem;
+    top: 2rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 4px solid white;
+}
+
+.timeline-date {
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* ========================================
+   MENSAGENS
+   ======================================== */
+.messages {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+}
+
+.message-list {
+    margin-top: 3rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.message-card {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent);
+}
+
+.message-author {
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.footer-section p,
+.footer-section a {
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.copyright {
+    padding-top: 2rem;
+    border-top: 1px solid #475569;
+    opacity: 0.7;
+}
+
+/* ========================================
+   RESPONSIVIDADE - MOBILE
+   ======================================== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--primary);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+    }
+
+    nav.active {
+        max-height: 300px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .countdown-timer {
+        gap: 1rem;
+    }
+
+    .time-unit {
+        min-width: 80px;
+        padding: 1.5rem;
+    }
+
+    .time-unit span {
+        font-size: 2rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        padding-left: 1.5rem;
+    }
+}
