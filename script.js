@@ -40,7 +40,7 @@ themeToggle.addEventListener('click', () => {
 
 // ================= Contador Regressivo =================
 function updateCountdown() {
-  const graduationDate = new Date('2024-12-18T20:00:00').getTime();
+  const graduationDate = new Date('2025-12-19T12:20:00').getTime();
   const now = new Date().getTime();
   const distance = graduationDate - now;
 
@@ -119,10 +119,8 @@ function displayMessages() {
 
 // Mensagens iniciais de exemplo
 messages.push(
-  { name: 'Ana Silva', message: 'Foi um ano incrível! Vou sentir saudades de todos. Obrigada pelos momentos especiais! 💙', date: new Date('2024-11-18T10:30:00') },
-  { name: 'Carlos Santos', message: 'Aprendi muito este ano, não só nas aulas, mas também sobre amizade e trabalho em equipe. Sucesso a todos!', date: new Date('2024-11-18T14:20:00') },
-  { name: 'Maria Oliveira', message: 'Que ano maravilhoso! Os professores foram sensacionais e os colegas, inesquecíveis. Até a próxima jornada! 🎓', date: new Date('2024-11-19T09:15:00') }
-);
+  { name: 'Will Smith', message: 'Foi um ano incrível! Parabéns a todos pela conclusão do Ensino Médio', date: new Date('2024-11-18T10:30:00') },
+ );
 displayMessages();
 
 // ================= Mostrar Redações =================
